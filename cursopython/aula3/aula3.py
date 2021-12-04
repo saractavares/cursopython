@@ -1,0 +1,3 @@
+"""
+outros tipos de concatenação
+"""
