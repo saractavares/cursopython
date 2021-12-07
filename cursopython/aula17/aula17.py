@@ -22,10 +22,3 @@ print(f'{texto[::-2].__len__()} é o tamanho dessa string')
 n = 58 / 8
 
 print(n.__abs__())
-
-
-def all(iterable):
-    for element in iterable:
-        if not element:
-            return False
-    return True
