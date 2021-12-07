@@ -14,4 +14,4 @@ nome = 'Sara tavares'
 num = 22
 
 print(nome)
-print(type(f'{nome:*^20}'.title().casefold()))
+print(f'{nome:*^20}'.title())
