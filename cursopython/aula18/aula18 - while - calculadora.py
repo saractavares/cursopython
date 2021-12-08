@@ -25,7 +25,6 @@ Utilizado para realizar operações "enquanto" uma condição for verdadeira
 #     x += 1
 #
 # print('Acabou')
-from itertools import repeat
 
 print('---------------------\n* Calculadora Iniciada *\n---------------------')
 
@@ -59,7 +58,8 @@ while True:
         if continuar == 's':
             print()
         elif continuar == 'n':
-            print('---------------------\n* Calculadora finalizada *\n---------------------')
+            print(
+                '---------------------\n* Calculadora finalizada *\n---------------------')
             break
         else:
             print('Opção inválida')
