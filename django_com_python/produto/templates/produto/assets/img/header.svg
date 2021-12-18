@@ -1,0 +1,62 @@
+<svg width="414" height="478" viewBox="0 0 414 478" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H414V478H220.5H0V0Z" fill="url(#paint0_linear)"/>
+<path class="cloud-3" d="M30.0595 288.69C40.4577 280.542 54.8723 291.61 49.685 303.759L53.4584 301.828C59.8729 298.544 66.0158 306.667 61.1095 311.945C59.8911 313.255 58.1823 314 56.3928 314H3.19095C-2.70086 314 -5.08095 306.408 -0.243554 303.044C4.45378 299.498 10.6717 298.687 16.1213 300.91L17.8465 301.614C20.713 297.838 23.8808 294.222 27.2533 290.89L30.0595 288.69Z" fill="white" fill-opacity="0.26"/>
+<path class="cloud-2" d="M386.059 109.69C396.458 101.542 410.872 112.61 405.685 124.759L409.458 122.828C415.873 119.544 422.016 127.667 417.109 132.945C415.891 134.255 414.182 135 412.393 135H359.191C353.299 135 350.919 127.408 355.756 124.044C360.454 120.498 366.672 119.687 372.121 121.91L373.846 122.614C376.713 118.838 379.881 115.222 383.253 111.89L386.059 109.69Z" fill="white" fill-opacity="0.73"/>
+<path class="cloud-1" d="M46.0595 42.6904C56.4577 34.5417 70.8723 45.6097 65.685 57.7593L69.4584 55.8277C75.8729 52.5441 82.0158 60.667 77.1095 65.9448C75.8911 67.2554 74.1823 68 72.3928 68H19.191C13.2991 68 10.9191 60.4078 15.7564 57.0443C20.4538 53.4978 26.6717 52.687 32.1213 54.9105L33.8465 55.6143C36.713 51.8378 39.8808 48.2219 43.2533 44.8895L46.0595 42.6904Z" fill="white" fill-opacity="0.87"/>
+<defs>
+<linearGradient id="paint0_linear" x1="207" y1="-18" x2="202.69" y2="275.937" gradientUnits="userSpaceOnUse">
+<stop stop-color="#269E89"/>
+<stop offset="1" stop-color="#78DFCD"/>
+</linearGradient>
+</defs>
+
+<style>
+.cloud-1 {
+  animation: cloud1-move alternate infinite 10s;
+}
+
+.cloud-2 {
+  animation: cloud2-move alternate infinite 10s;
+}
+
+.cloud-3 {
+  animation: cloud3-move alternate infinite 10s;
+}
+
+@keyframes cloud1-move {
+  0% {
+    opacity: 0.2;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cloud2-move {
+  0% {
+    opacity: 1;
+    transform: translateX(-100px);
+  }
+
+  100% {
+    opacity: 0.2;
+    transform: translateX(0);
+  }
+}
+
+@keyframes cloud3-move {
+  0% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+</style>
+</svg>
