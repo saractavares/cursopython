@@ -22,27 +22,29 @@ import re
 CPF = input("Qual o CPF: ")
 CPF = (re.sub("\!|\'|\?|\.|\-", "", CPF))
 novo_cpf = CPF[:-2]
+print(novo_cpf)
 reverso = 10
 total = 0
 
-for i in range(19):
-    if i > 8:
-        i -= 9
+for index in range(19):
 
-    total += int(novo_cpf[i]) * reverso
+    if index > 8:
+        index -= 9  # se estiver na nona volta, o index subtrai 9 voltas (começa de novo)
 
-    print(novo_cpf[i], reverso)
+    total += int(novo_cpf[index]) * reverso
+
+    print(novo_cpf[index], reverso)
 
     reverso -= 1
 
     if reverso < 2:
         reverso = 11
-        d = 11 - (total % 11)
+        primeiro_digito = 11 - (total % 11)
 
-        if d > 9:
-            d = 0
-
-            novo_cpf += str(d)
+        if primeiro_digito > 9:
+            primeiro_digito = 0
+        total = 0
+        novo_cpf += str(primeiro_digito)
 
 
 print(novo_cpf)
