@@ -7,7 +7,7 @@ def func(*args, **kwargs):
     print(args)
     # print(kwargs['nome'], kwargs['sobrenome'])
 
-    data = kwargs.get('data')
+    data = kwargs.get('nome')
     if data is not None:
         print(data)
     else:
